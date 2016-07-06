@@ -1,0 +1,12 @@
+[Desktop Entry]
+
+Type=Application
+Exec=kodi -d 5 --standalone -fs
+Hidden=false
+NoDisplay=false
+
+X-GNOME-Autostart-enabled=true
+Name[en_En]=kodi
+Name=kodi
+Comment[en_En]=
+Comment=

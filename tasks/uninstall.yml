@@ -1,0 +1,23 @@
+---
+# uninstall tasks for ansible-role-kodi
+
+- name: Uninstall software-properties-common
+  apt: pkg=software-properties-common state=absent update_cache=true purge=true
+
+- name: Remove kodi repository 
+  apt_repository: repo='ppa:team-xbmc/ppa' state=absent
+
+- name: Uninstall kodi repository 
+  apt: pkg=kodi state=absent update_cache=true purge=true
+
+- name: Remove upstart script
+  file: dest=/etc/init/kodi.conf state=absent 
+
+- name: Remove .kodi folder
+  command: rm -r /home/{{ username }}/.kodi 
+
+- name: Copy over Xwrapper config
+  copy: src=Xwrapper.config.old dest=/etc/X11/Xwrapper.config owner=root group=root mode=644 
+
+- name: Remove autostart folder
+  command: rm -r /home/{{ username }}/.config/autostart/kodi.desktop
