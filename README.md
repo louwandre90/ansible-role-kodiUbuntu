@@ -1,6 +1,6 @@
 ansible-role-kodiUbuntu
 =========
-[![Travis](https://img.shields.io/travis/louwandre90/ansible-role-kodiUbuntu.svg?style=flat-square)](https://travis-ci.org/louwandre90/ansible-role-kodiUbuntu.svg?branch=master)
+[![Travis](https://img.shields.io/travis/louwandre90/ansible-role-kodiUbuntu.svg?style=flat-square)](https://travis-ci.org/louwandre90/ansible-role-kodiUbuntu)
 [![Ansible Role](https://img.shields.io/badge/role-louwandre90.kodiUbuntu-blue.svg?style=flat-square)](https://galaxy.ansible.com/louwandre90/kodiUbuntu/)
 
 This role installs Kodi v16 on Ubuntu.
