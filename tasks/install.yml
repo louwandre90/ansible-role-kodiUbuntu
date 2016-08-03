@@ -24,11 +24,11 @@
   #file: path=/home/{{username}}/.kodi state=directory owner={{ username }} group={{ username }}
 
   #To create : tar -zcvf kodibackup.tar.gz .kodi
-- name: Copy kodibackup.tar 
-  copy: src=kodibackup.tar.gz dest=/home/{{ username }}/kodibackup.tar.gz owner={{ username }} group={{ username }} 
+  #- name: Copy kodibackup.tar 
+  #copy: src=kodibackup.tar.gz dest=/home/{{ username }}/kodibackup.tar.gz owner={{ username }} group={{ username }} 
 
-- name:  Extract kodibackup tar
-  unarchive: src=/home/{{ username }}/kodibackup.tar.gz  dest=/home/{{ username }}/ copy=no owner={{ username }} group={{ username }}
+  #- name:  Extract kodibackup tar
+  #unarchive: src=/home/{{ username }}/kodibackup.tar.gz  dest=/home/{{ username }}/ copy=no owner={{ username }} group={{ username }}
 
 - name: Copy startup file
   copy: src=kodi.desktop dest=/home/{{ username }}/.config/autostart/kodi.desktop owner={{ username }} group={{ username }} mode=664
