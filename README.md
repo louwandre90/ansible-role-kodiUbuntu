@@ -1,31 +1,39 @@
-Role Name
+ansible-role-kodiUbuntu
 =========
+[![Travis](https://img.shields.io/travis/louwandre90/ansible-role-kodiUbuntu.svg?style=flat-square)](https://travis-ci.org/louwandre90/ansible-role-kodiUbuntu.svg?branch=master)
+[![Ansible Role](https://img.shields.io/badge/role-louwandre90.kodiUbuntu-blue.svg?style=flat-square)](https://galaxy.ansible.com/louwandre90/kodiUbuntu/)
 
-A brief description of the role goes here.
+This role installs the Kodi v16 on Ubuntu.
+
+Installation is done via apt and some basic configuration is done after installation. 
 
 Requirements
 ------------
+Configuration is done according to a specific directory structure setup by the following role: 
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+    louwandre90.mediaDirs
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+The following defaults are set:
+    username: jarvis
 
+These can be overidden as follows:
+    ansible-playbook playbook.yml --extra-vars="username=myuser"
+    
 Dependencies
 ------------
+This role depends on:
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+    louwandre90.mediaDirs
 
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
     - hosts: servers
       roles:
-         - { role: username.rolename, x: 42 }
+         - { role: louwandre90.kodiUbuntu }
 
 License
 -------
@@ -35,4 +43,4 @@ BSD
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+This role was created in 2016 by Andre Louw.
