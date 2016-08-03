@@ -3,7 +3,7 @@ ansible-role-kodiUbuntu
 [![Travis](https://img.shields.io/travis/louwandre90/ansible-role-kodiUbuntu.svg?style=flat-square)](https://travis-ci.org/louwandre90/ansible-role-kodiUbuntu.svg?branch=master)
 [![Ansible Role](https://img.shields.io/badge/role-louwandre90.kodiUbuntu-blue.svg?style=flat-square)](https://galaxy.ansible.com/louwandre90/kodiUbuntu/)
 
-This role installs the Kodi v16 on Ubuntu.
+This role installs Kodi v16 on Ubuntu.
 
 Installation is done via apt and some basic configuration is done after installation. 
 
@@ -17,9 +17,11 @@ Role Variables
 --------------
 
 The following defaults are set:
+
     username: jarvis
 
-These can be overidden as follows:
+To pass different variables:
+
     ansible-playbook playbook.yml --extra-vars="username=myuser"
     
 Dependencies
