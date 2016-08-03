@@ -2,7 +2,7 @@ galaxy_info:
   author: louwandre90
   description: Ansible script to install kodi on ubuntu
   company: J.A.R.V.I.S. Projects
-  version: 0.0.1
+  version: 0.1.0
   
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
