@@ -22,7 +22,7 @@ The following defaults are set:
 
 To pass different variables:
 
-    ansible-playbook playbook.yml --extra-vars="username=myuser"
+    ansible-playbook playbook.yml -e 'username=myuser'
     
 Dependencies
 ------------
