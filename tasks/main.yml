@@ -1,8 +1,8 @@
 ---
 # tasks file for ansible-role-kodi
-- include: uninstall.yml 
-  tags:
-      - uninstall
+#- include: uninstall.yml 
+#  tags:
+#      - uninstall
 - include: install.yml 
   tags:
       - install
