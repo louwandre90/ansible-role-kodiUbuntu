@@ -36,5 +36,5 @@
   #- name: Copy Config Backup
   #copy: src=201603112141.zip dest=/home/{{ username }}/.kodi/201603112141.zip owner={{ username }} group={{ username }} mode=0664
 
-- name: Copy Backup file to .kodi 
-  command: mv /home/{{ username }}/kodibackup.tar.gz /home/{{ username }}/.kodi/kodibackup.tar.zip
+  #- name: Copy Backup file to .kodi 
+  #command: mv /home/{{ username }}/kodibackup.tar.gz /home/{{ username }}/.kodi/kodibackup.tar.zip
